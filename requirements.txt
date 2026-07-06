@@ -5,3 +5,5 @@ pandas
 matplotlib
 seaborn
 tabulate
+pyyaml
+pytest
