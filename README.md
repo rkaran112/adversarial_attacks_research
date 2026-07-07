@@ -18,13 +18,11 @@ It loads MNIST (via a `LeNet5` model) and CIFAR-10 (via a `torchvision` `resnet5
 - PyTorch / torchvision
 - pandas, seaborn, matplotlib, tabulate
 
-There is no `requirements.txt` content checked in (the file exists but is empty), so exact package versions are not pinned — see Setup below.
-
 ## Setup
 
-1. Install the packages the notebook imports (no pinned versions are provided):
+1. Install the packages the notebook imports:
    ```
-   pip install torch torchvision numpy pandas matplotlib seaborn tabulate
+   pip install -r requirements.txt
    ```
 2. Open `src/Adversarial_attacks_FGSM.ipynb` in Jupyter/Colab. MNIST and CIFAR-10 are downloaded automatically on first run via `torchvision.datasets`.
 
@@ -41,8 +39,8 @@ Run the notebook top to bottom. It will:
 
 - Neither model is trained before the attacks run — the lines that would load trained weights (`lenet.load_state_dict(...)`, `resnet.load_state_dict(...)`) are commented out, and there is no training loop. As a result, the reported "post-attack" accuracy (~10%, i.e. random-chance for 10 classes) mostly reflects an untrained model rather than the effect of the attack.
 - The "targeted vs. non-targeted success rate" table/plot in the results section uses hand-typed placeholder numbers (`success_rate_data` is a literal dict in the code), not output computed from an actual targeted-attack implementation — no targeted attack is implemented in the notebook.
-- `requirements.txt` and `.gitignore` are present but empty.
+- `.gitignore` is present but empty.
 - `src/implementation.ipynb` is present but is an empty file (0 bytes), so it can't currently be opened as a notebook.
-- No README, tests, or CLI/script entry point existed prior to this commit — this is a single exploratory notebook, not a packaged project.
+- No tests or CLI/script entry point exist — this is a single exploratory notebook, not a packaged project.
 
-Next steps to make this "complete": train the models (or load real pretrained weights) before running the attacks, implement an actual targeted-attack path instead of hard-coded example numbers, populate `requirements.txt`, and either fill in or remove `src/implementation.ipynb`.
+Next steps to make this "complete": train the models (or load real pretrained weights) before running the attacks, implement an actual targeted-attack path instead of hard-coded example numbers, and either fill in or remove `src/implementation.ipynb`.
