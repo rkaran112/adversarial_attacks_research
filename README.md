@@ -6,7 +6,7 @@ against image classifiers on MNIST and CIFAR-10.
 > **Looking for the packaged, tested project?** The reusable implementation —
 > a modular Python package with a training/evaluation CLI and a full test
 > suite — now lives in its own repository:
-> **[adversarial-attacks-toolkit](https://github.com/rkaran112/adversarial-attacks-toolkit)**.
+> **[adversarial-robustness-toolkit](https://github.com/rkaran112/adversarial-robustness-toolkit)**.
 > This repository holds only the original research notebook.
 
 ## Contents
@@ -40,6 +40,6 @@ This is exploratory research code, kept as-is for reference:
 - The targeted-vs-non-targeted table uses hand-typed placeholder numbers rather
   than computed output.
 
-The [adversarial-attacks-toolkit](https://github.com/rkaran112/adversarial-attacks-toolkit)
+The [adversarial-robustness-toolkit](https://github.com/rkaran112/adversarial-robustness-toolkit)
 repository addresses these — it trains the models, implements real targeted
 attacks, and verifies everything with tests.
