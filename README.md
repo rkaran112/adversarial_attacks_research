@@ -39,7 +39,6 @@ Run the notebook top to bottom. It will:
 
 - Neither model is trained before the attacks run — the lines that would load trained weights (`lenet.load_state_dict(...)`, `resnet.load_state_dict(...)`) are commented out, and there is no training loop. As a result, the reported "post-attack" accuracy (~10%, i.e. random-chance for 10 classes) mostly reflects an untrained model rather than the effect of the attack.
 - The "targeted vs. non-targeted success rate" table/plot in the results section uses hand-typed placeholder numbers (`success_rate_data` is a literal dict in the code), not output computed from an actual targeted-attack implementation — no targeted attack is implemented in the notebook.
-- `.gitignore` is present but empty.
 - `src/implementation.ipynb` is present but is an empty file (0 bytes), so it can't currently be opened as a notebook.
 - No tests or CLI/script entry point exist — this is a single exploratory notebook, not a packaged project.
 

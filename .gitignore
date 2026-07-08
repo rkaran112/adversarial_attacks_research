@@ -1,0 +1,20 @@
+# Datasets downloaded by torchvision.datasets (MNIST, CIFAR-10)
+data/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Model checkpoints
+*.pth
+*.pt
+
+# Virtual environments
+venv/
+.venv/
+
+# OS
+.DS_Store
