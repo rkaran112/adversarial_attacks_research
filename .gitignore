@@ -1,6 +1,9 @@
 # Datasets downloaded by torchvision.datasets (MNIST, CIFAR-10)
 data/
 
+# Result CSVs written by the notebook (adversarial_results.csv, success_rate_results.csv)
+*.csv
+
 # Jupyter
 .ipynb_checkpoints/
 
